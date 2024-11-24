@@ -1,0 +1,102 @@
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.carousel {
+    display: flex;
+    gap: 10px; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+}
+
+.carousel a {
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+/* Общие стили для контейнера */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Контейнер для карусели */
+.carousel {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Каждый элемент карусели */
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+/* Стрелки */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
